@@ -8,6 +8,7 @@ public class SpringTest {
 
         Shop shop=context.getBean("shop",Shop.class);
         shop.ProductFeedA();
+        shop.ProductFeedB();
         context.close();
     }
 }

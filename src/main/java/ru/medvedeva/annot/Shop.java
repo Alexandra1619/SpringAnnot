@@ -1,5 +1,6 @@
 package ru.medvedeva.annot;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import ru.medvedeva.annot.abstractClasses.MeatProduct;
 import ru.medvedeva.annot.abstractClasses.MilkProducts;
@@ -10,11 +11,11 @@ import java.util.List;
 public class Shop {
     private List<MilkProducts>milkProductsList=new ArrayList<>();
     private List<MeatProduct>meatProductList=new ArrayList<>();
-
+@Autowired
     public void setMeatProductList(List<MeatProduct> meatProductList) {
         this.meatProductList = meatProductList;
     }
-
+@Autowired
     public void setMilkProductsList(List<MilkProducts> milkProductsList) {
         this.milkProductsList = milkProductsList;
     }

@@ -1,7 +1,8 @@
 package ru.medvedeva.annot.classes;
 
+import org.springframework.stereotype.Component;
 import ru.medvedeva.annot.abstractClasses.MeatProduct;
-
+@Component
 public class Beef extends MeatProduct {
     private int priseBeef;
 
