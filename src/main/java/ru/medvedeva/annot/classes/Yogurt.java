@@ -1,9 +1,11 @@
 package ru.medvedeva.annot.classes;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import ru.medvedeva.annot.abstractClasses.MilkProducts;
 @Component
 public class Yogurt extends MilkProducts {
+@Value("${yogurt.priceYogurt}")
     private int priseYogurt;
 
     public int getPriseBeef() {
